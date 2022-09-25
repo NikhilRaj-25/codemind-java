@@ -1,17 +1,11 @@
 import java.util.*;
-public class file
-{
-    public static void main(String[] args)
-    {
+public class file{
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        int n;
-        n=sc.nextInt();
-        int i,j;
-        for(i=1;i<=n;i++)
-        {
-            for(j=1;j<=n;j++)
-            {
-                System.out.print((char)(64+i)+" ");
+        int a=sc.nextInt();
+        for(int i=1;i<=a;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
             }
             System.out.println();
         }
