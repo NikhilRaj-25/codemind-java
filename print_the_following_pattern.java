@@ -11,12 +11,7 @@ public class file
         {
             for(j=1;j<=n;j++)
             {
-                if(i==j){
-                    System.out.print("0");
-                }
-                else{
-                    System.out.print("x");
-                }
+                System.out.print((char)(64+i)+" ");
             }
             System.out.println();
         }
