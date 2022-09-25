@@ -1,27 +1,23 @@
 import java.util.*;
-public class file
-{
-    public static void main(String[] args)
-    {
+public class file{
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        int n;
-        n=sc.nextInt();
-        int i,j;
-        for(i=1;i<=n;i++)
-        {
-            for(j=1;j<=n;j++)
-            {
-                if(j==1 || j==n)
-                {
-                    System.out.print("*"+" ");
+        int a=sc.nextInt();
+        int k=a;
+        for(int i=1;i<=a;i++){
+            for(int j=1;j<=a;j++){
+                if(i==j){
+                    System.out.print("x");
+                    if(i==k){
+                        k--;
+                    }
                 }
-                else if(i==j)
-                {
-                    System.out.print("*"+" ");
+                else if(k==j){
+                    System.out.print("x");
+                    k--;
                 }
-                else
-                {
-                    System.out.print(" "+" ");
+                else{
+                    System.out.print("0");
                 }
             }
             System.out.println();
